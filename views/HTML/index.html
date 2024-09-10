@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/610fbd17c7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../../assets/CSS/style.css">
+    <link rel="stylesheet" href="../../assets/CSS/styleofertas.css">
+    <script src="../../controllers/JS/carruselimagen.js" defer></script>
+    <script src="../../controllers/JS/ocultarelemento.js" defer></script>
+    <script src="../../controllers/JS/authStatus.js" defer></script>
+    <script src="../../controllers/JS/logout.js" defer></script>
+    <script src="../../controllers/JS/index.js"></script>
+    <title>Fast Buy</title>
+</head>
+<body>
+    <!--todoINICIO HEADER-->
+    <header class="header">
+        <!--?CONTENEDOR LOGO-->
+        <div class="header__logo">
+            <span class="logo__texto"><i class="fa-sharp fa-solid fa-cart-shopping"></i> Fast <b>Buy</b></span>
+        </div>
+        <p id="headerStatus">Cargando...</p>
+        <button id="logoutButton" style="display:none;">Cerrar Sesión</button>
+        <!--?CONTENEDOR INPUT BUSCADOR -->
+        <div class="header__buscador">
+            <input  type="text" placeholder="Buscar Producto..." ><i class="fa-solid fa-magnifying-glass lupa__header"></i>
+        </div>
+
+        <!--?CONTENEDOR-->
+        <nav class="header__nav">
+            <ul class="nav__list">
+                <li class="list__itemh"><a class="item__enlace" href="#">Inicio</a></li>
+                <li class="list__itemh"><a class="item__enlace" href="../../views/HTML/carrito.html"><i class="fa-solid fa-cart-shopping icono__carrito_header"></i> Carrito <span id="cart-count">0</span></a></li>
+                <li class="list__itemh abrir__cuenta"><a class="item__enlace" href="#"><span><i class="fa-solid fa-user"></i></span> Mi Cuenta</a></li>
+                <li class="list__itemh item--modify"><a class="item__enlace" href="#"><i class="fa-solid fa-bars abrir"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--todoFIN HEADER-->
+
+    <!--?CONTENEDOR MENU LATERAL-->
+    <div class="menu_lateral__contenedor">
+        <div class="menu_lateral__contenido">
+            <!--?HEADER MENU LATERAL-->
+            <div class="menulateral__header">
+                <div class="menulateral__header_usuario">
+                    <span class="menuheader__item_usuario"><i class="fa-solid fa-user"></i>  Hola, Ignacio Rocha</span>
+                    <span class="menuheader__item_equis  salir "><i class="fa-solid fa-x"></i></span>
+                </div>
+            </div>
+
+            <!--?BUSCADOR MENU LATERAL-->
+            <div class="menulateral__buscador">
+                <input type="text" placeholder="Buscar Producto...">
+            </div>
+
+            <nav class="menulateral__nav">
+                <section class="submenu">
+                    <h2 class="submenu__subtitulo">Por Departamento</h2>
+                    <ul class="nav__list_lateral">
+                        <li class="listlateral__item"><a class="listalateral__link" href="#">Electronico</a></li>
+                        <li class="listlateral__item"><a class="listalateral__link" href="#">Computadoras</a></li>
+                        <li class="listlateral__item"><a class="listalateral__link" href="#">Hogar</a></li>
+                        <li class="listlateral__item"><a class="listalateral__link" href="#">Ver Todo</a></li>
+                    </ul>
+                </section>
+                <section class="submenu-1">
+                    <h2 class="submenu__subtitulo">Ropa y Accesorios</h2>
+                    <ul class="nav__list_lateral">
+                        <li class="listalateral__item"><a class="listalateral__link" href="#">Hombre</a></li>
+                        <li class="listalateral__item"><a class="listalateral__link" href="#">Mujer</a></li>
+                        <li class="listalateral__item"><a class="listalateral__link" href="#">Niño</a></li>
+                        <li class="listalateral__item"><a class="listalateral__link" href="#">Animales</a></li>
+                    </ul>
+                </section>
+                <section class="submenu">
+                    <h2 class="submenu__subtitulo">Ayuda & Ajustes</h2>
+                    <ul class="nav__list_lateral">
+                        <li class="listalateral__item"><a class="listalateral__link" href="#">Tu Cuenta</a></li>
+                        <li class="listalateral__item"><a class="listalateral__link" href="#"><i class="fa-solid fa-language"></i> Español</a></li>
+                        <li class="listalateral__item"><a class="listalateral__link" href="#"><i class="fa-solid fa-earth-americas"></i> Urguay</a></li>
+                        <li class="listalateral__item"><a class="listalateral__link abrir__cuenta2" href="#"> <span><i class="fa-solid fa-user"></i></span> Mi Cuenta</a></li>
+                    </ul>
+                </section>
+            </nav>
+        </div>
+    </div>
+
+    <!--?CONTENEDOR CUENTA-->
+    <section class="contenedor__cuenta">
+        <div class="contenedorcuenta__contenido">
+            <div class="cuenta__formulario">
+                <div class="cuenta__inciosesion">
+                    <a href="login.html"><button class="btn__cuenta btn--iniciosesion">Iniciar Sesión</button>
+                    </a>
+                </div>
+                <div class="cuenta__registro">
+                    <a href="register.html"><button class="btn__cuenta btn--registro">Registrarse</button></a>
+                </div>
+            </div>
+            <div class="cuenta__continuar">
+                <span>Continuar</span>
+            </div>
+            <div class="cuenta__sociales">
+                <div class="container__btnsociales">
+                    <button class="btn__empresa btn--modify-google"><img src="../../assets/IMG/google(1).png" alt=""><span>Con Google</span></button>
+                </div>
+                <div class="container__btnsociales btnsociales--modify">
+                    <button class="btn__empresa btn--facebook"><i class="fa-brands fa-square-facebook"></i>Con Facebook</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+
+    <!--?IMAGEN HERO-->
+    <div class="container__hero">
+        <div class="carrusel">
+            <div class="carrusel__imagenes">
+                <img src="../../assets/IMG/VerOfertas.png" alt="Imagen 1">
+                <img src="../../assets/IMG/VerOfertas.png" alt="Imagen 2">
+                <img src="../../assets/IMG/VerOfertas.png" alt="Imagen 3">
+            </div>
+            <button class="carrusel__prev">&#10094;</button>
+            <button class="carrusel__next">&#10095;</button>
+        </div>
+    </div>
+
+    <!--?CONTENEDOR DE TARJETA-->
+    <section class="tarjeta__contenedor">
+        <h2 class="tarjeta__titulo">¡Ofertas del Dia!</h2> 
+        <div class="tarjeta__contenido">
+            <a href="pagina__producto.html">
+                <!--?TARJETA IMAGEN-->
+                <div class="contenidotarjeta__imagen">
+                    <img src="https://f.fcdn.app/imgs/22cb6c/www.magnum.com.uy/oscuy/dfa9/original/catalogo/1210001901261_1210001901261_1/2000-2000/termo-stanley-rosado-590ml-ze1795-termo-stanley-rosado-590ml-ze1795.jpg" alt="">
+                </div>
+                <!--?TARJETA DESCRIPCION-->
+                <div class="contenidotarjeta__descripcion">
+                    <p>TERMO STANLEY ROSADO 590ML ZE1795</p>
+                </div>
+                <div class="contenidotarjeta__precio">
+                    <span class="precio__desde">Desde U$S 190</span>
+                    <span class="precio_hasta">U$S 199.00</span>
+                </div>
+            </a>
+        </div>
+        <div class="tarjeta__contenido">
+            <a href="pagina__producto2.html">
+                <!--?TARJETA IMAGEN-->
+                <div class="contenidotarjeta__imagen">
+                    <img src="../../assets/IMG/TELE.png" alt="">
+                </div>
+                <!--?TARJETA DESCRIPCION-->
+                <div class="contenidotarjeta__descripcion">
+                    <p>Appel Iphone 12 Mini, 128GB, Black - Unlocked (Renewed)</p>
+                </div>
+                <div class="contenidotarjeta__precio">
+                    <span class="precio__desde">Desde U$S 190</span>
+                    <span class="precio_hasta">U$S 199.00</span>
+                </div>
+            </a>
+        </div>
+        <div class="tarjeta__contenido">
+            <a href="https://youtube.com">
+                <!--?TARJETA IMAGEN-->
+                <div class="contenidotarjeta__imagen">
+                    <img src="../../assets/IMG/TELE.png" alt="">
+                </div>
+                <!--?TARJETA DESCRIPCION-->
+                <div class="contenidotarjeta__descripcion">
+                    <p>Appel Iphone 12 Mini, 128GB, Black - Unlocked (Renewed)</p>
+                </div>
+                <div class="contenidotarjeta__precio">
+                    <span class="precio__desde">Desde U$S 190</span>
+                    <span class="precio_hasta">U$S 199.00</span>
+                </div>
+            </a>
+        </div>
+        <div class="tarjeta__contenido">
+            <a href="https://youtube.com">
+                <!--?TARJETA IMAGEN-->
+                <div class="contenidotarjeta__imagen">
+                    <img src="../../assets/IMG/TELE.png" alt="">
+                </div>
+                <!--?TARJETA DESCRIPCION-->
+                <div class="contenidotarjeta__descripcion">
+                    <p>Appel Iphone 12 Mini, 128GB, Black - Unlocked (Renewed)</p>
+                </div>
+                <div class="contenidotarjeta__precio">
+                    <span class="precio__desde">Desde U$S 190</span>
+                    <span class="precio_hasta">U$S 199.00</span>
+                </div>
+            </a>
+        </div>
+        <div class="tarjeta__contenido">
+            <a href="https://youtube.com">
+                <!--?TARJETA IMAGEN-->
+                <div class="contenidotarjeta__imagen">
+                    <img src="../../assets/IMG/TELE.png" alt="">
+                </div>
+                <!--?TARJETA DESCRIPCION-->
+                <div class="contenidotarjeta__descripcion">
+                    <p>Appel Iphone 12 Mini, 128GB, Black - Unlocked (Renewed)</p>
+                </div>
+                <div class="contenidotarjeta__precio">
+                    <span class="precio__desde">Desde U$S 190</span>
+                    <span class="precio_hasta">U$S 199.00</span>
+                </div>
+            </a>
+        </div>
+    </section>
+  <section class="contenedor__oferta">
+    <div class="card">
+        <div class="card-content">
+            <h2>¡Llegó el invierno!</h2>
+            <button class="button">¡Lo quiero!</button>
+        </div>
+        <img src="https://images.tiendamia.com/materiales/uruguay/2024/abril/cat-home/uy_categorycards_home_camperas_187x270.png" alt="Campera">
+    </div>
+
+    <div class="card">
+        <div class="card-content">
+            <h2>¡Llegó el invierno!</h2>
+            <button class="button">¡Lo quiero!</button>
+        </div>
+        <img src="https://images.tiendamia.com/materiales/uruguay/2024/abril/cat-home/uy_categorycards_home_camperas_187x270.png" alt="Campera">
+    </div>
+
+    
+        
+    <div class="card">
+        <div class="card-content">
+            <h2>¡Llegó el invierno!</h2>
+            <button class="button">¡Lo quiero!</button>
+        </div>
+        <img src="https://images.tiendamia.com/materiales/uruguay/2024/abril/cat-home/uy_categorycards_home_camperas_187x270.png" alt="Campera">
+    </div>
+    
+  </section>
+
+  <section class="tarjeta__contenedor">
+    <h2 class="tarjeta__titulo">¡Tecnologia!</h2> 
+    <div class="tarjeta__contenido">
+        <a href="pagina__producto.html">
+            <!--?TARJETA IMAGEN-->
+            <div class="contenidotarjeta__imagen">
+                <img src="../../assets/IMG/TELE.png" alt="">
+            </div>
+            <!--?TARJETA DESCRIPCION-->
+            <div class="contenidotarjeta__descripcion">
+                <p>Appel Iphone 12 Mini, 128GB, Black - Unlocked (Renewed)</p>
+            </div>
+            <div class="contenidotarjeta__precio">
+                <span class="precio__desde">Desde U$S 190</span>
+                <span class="precio_hasta">U$S 199.00</span>
+            </div>
+        </a>
+    </div>
+    <div class="tarjeta__contenido">
+        <a href="https://youtube.com">
+            <!--?TARJETA IMAGEN-->
+            <div class="contenidotarjeta__imagen">
+                <img src="../../assets/IMG/TELE.png" alt="">
+            </div>
+            <!--?TARJETA DESCRIPCION-->
+            <div class="contenidotarjeta__descripcion">
+                <p>Appel Iphone 12 Mini, 128GB, Black - Unlocked (Renewed)</p>
+            </div>
+            <div class="contenidotarjeta__precio">
+                <span class="precio__desde">Desde U$S 190</span>
+                <span class="precio_hasta">U$S 199.00</span>
+            </div>
+        </a>
+    </div>
+    <div class="tarjeta__contenido">
+        <a href="https://youtube.com">
+            <!--?TARJETA IMAGEN-->
+            <div class="contenidotarjeta__imagen">
+                <img src="../../assets/IMG/TELE.png" alt="">
+            </div>
+            <!--?TARJETA DESCRIPCION-->
+            <div class="contenidotarjeta__descripcion">
+                <p>Appel Iphone 12 Mini, 128GB, Black - Unlocked (Renewed)</p>
+            </div>
+            <div class="contenidotarjeta__precio">
+                <span class="precio__desde">Desde U$S 190</span>
+                <span class="precio_hasta">U$S 199.00</span>
+            </div>
+        </a>
+    </div>
+    <div class="tarjeta__contenido">
+        <a href="https://youtube.com">
+            <!--?TARJETA IMAGEN-->
+            <div class="contenidotarjeta__imagen">
+                <img src="../IMG/TELE.png" alt="">
+            </div>
+            <!--?TARJETA DESCRIPCION-->
+            <div class="contenidotarjeta__descripcion">
+                <p>Appel Iphone 12 Mini, 128GB, Black - Unlocked (Renewed)</p>
+            </div>
+            <div class="contenidotarjeta__precio">
+                <span class="precio__desde">Desde U$S 190</span>
+                <span class="precio_hasta">U$S 199.00</span>
+            </div>
+        </a>
+    </div>
+    <div class="tarjeta__contenido">
+        <a href="https://youtube.com">
+            <!--?TARJETA IMAGEN-->
+            <div class="contenidotarjeta__imagen">
+                <img src="../IMG/TELE.png" alt="">
+            </div>
+            <!--?TARJETA DESCRIPCION-->
+            <div class="contenidotarjeta__descripcion">
+                <p>Appel Iphone 12 Mini, 128GB, Black - Unlocked (Renewed)</p>
+            </div>
+            <div class="contenidotarjeta__precio">
+                <span class="precio__desde">Desde U$S 190</span>
+                <span class="precio_hasta">U$S 199.00</span>
+            </div>
+        </a>
+    </div>
+</section>
+
+<section class="tarjeta__contenedor">
+    <h2 class="tarjeta__titulo">¡Mejores Televisores!</h2> 
+    <div class="tarjeta__contenido">
+        <a href="pagina__producto.html">
+            <!--?TARJETA IMAGEN-->
+            <div class="contenidotarjeta__imagen">
+                <img src="../IMG/TELE.png" alt="">
+            </div>
+            <!--?TARJETA DESCRIPCION-->
+            <div class="contenidotarjeta__descripcion">
+                <p>Appel Iphone 12 Mini, 128GB, Black - Unlocked (Renewed)</p>
+            </div>
+            <div class="contenidotarjeta__precio">
+                <span class="precio__desde">Desde U$S 190</span>
+                <span class="precio_hasta">U$S 199.00</span>
+            </div>
+        </a>
+    </div>
+    <div class="tarjeta__contenido">
+        <a href="https://youtube.com">
+            <!--?TARJETA IMAGEN-->
+            <div class="contenidotarjeta__imagen">
+                <img src="../IMG/TELE.png" alt="">
+            </div>
+            <!--?TARJETA DESCRIPCION-->
+            <div class="contenidotarjeta__descripcion">
+                <p>Appel Iphone 12 Mini, 128GB, Black - Unlocked (Renewed)</p>
+            </div>
+            <div class="contenidotarjeta__precio">
+                <span class="precio__desde">Desde U$S 190</span>
+                <span class="precio_hasta">U$S 199.00</span>
+            </div>
+        </a>
+    </div>
+    <div class="tarjeta__contenido">
+        <a href="https://youtube.com">
+            <!--?TARJETA IMAGEN-->
+            <div class="contenidotarjeta__imagen">
+                <img src="../IMG/TELE.png" alt="">
+            </div>
+            <!--?TARJETA DESCRIPCION-->
+            <div class="contenidotarjeta__descripcion">
+                <p>Appel Iphone 12 Mini, 128GB, Black - Unlocked (Renewed)</p>
+            </div>
+            <div class="contenidotarjeta__precio">
+                <span class="precio__desde">Desde U$S 190</span>
+                <span class="precio_hasta">U$S 199.00</span>
+            </div>
+        </a>
+    </div>
+    <div class="tarjeta__contenido">
+        <a href="https://youtube.com">
+            <!--?TARJETA IMAGEN-->
+            <div class="contenidotarjeta__imagen">
+                <img src="../IMG/TELE.png" alt="">
+            </div>
+            <!--?TARJETA DESCRIPCION-->
+            <div class="contenidotarjeta__descripcion">
+                <p>Appel Iphone 12 Mini, 128GB, Black - Unlocked (Renewed)</p>
+            </div>
+            <div class="contenidotarjeta__precio">
+                <span class="precio__desde">Desde U$S 190</span>
+                <span class="precio_hasta">U$S 199.00</span>
+            </div>
+        </a>
+    </div>
+    <div class="tarjeta__contenido">
+        <a href="https://youtube.com">
+            <!--?TARJETA IMAGEN-->
+            <div class="contenidotarjeta__imagen">
+                <img src="../IMG/TELE.png" alt="">
+            </div>
+            <!--?TARJETA DESCRIPCION-->
+            <div class="contenidotarjeta__descripcion">
+                <p>Appel Iphone 12 Mini, 128GB, Black - Unlocked (Renewed)</p>
+            </div>
+            <div class="contenidotarjeta__precio">
+                <span class="precio__desde">Desde U$S 190</span>
+                <span class="precio_hasta">U$S 199.00</span>
+            </div>
+        </a>
+    </div>
+</section>
+<div class="overlay"></div>
+<script>
+    // Abre o cierra el menú lateral y maneja el scroll
+    function toggleMenu() {
+        const menuContenedor = document.querySelector(".menu_lateral__contenedor");
+        const isMenuVisible = menuContenedor.classList.contains("show");
+        
+        if (isMenuVisible) {
+            menuContenedor.classList.remove("show");
+            document.body.classList.remove("no-scroll");
+        } else {
+            menuContenedor.classList.add("show");
+            document.body.classList.add("no-scroll");
+        }
+    }
+    
+    // Evento para abrir el menú lateral
+    document.querySelector(".abrir").addEventListener("click", toggleMenu);
+    
+    // Evento para cerrar el menú lateral
+    document.querySelector(".salir").addEventListener("click", toggleMenu);
+    
+    //CODIGO CUENTA LOGIN
+    document.querySelector(".abrir__cuenta").addEventListener("click", () => {
+        document.querySelector(".contenedor__cuenta").style.display = "none";
+    });
+    
+    document.querySelector(".abrir__cuenta").addEventListener("click", () => {
+        document.querySelector(".contenedor__cuenta").style.display = "flex";
+    });
+    
+    document.querySelector(".abrir__cuenta").addEventListener("click", () => {
+        document.querySelector(".contenedor__cuenta").classList.remove("show");
+    });
+    
+    </script>
+    
+    <script src="../JS/main.js" defer></script>
+    <script src="../JS/cart.js" defer></script>
+    <script src="../JS/product.js" defer></script>
+
+</body>
+</html>
