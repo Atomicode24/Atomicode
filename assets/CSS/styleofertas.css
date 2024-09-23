@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedor__oferta {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 100%;
+    padding: 40px;
+    gap: 20px;
+}
+
+.card {
+    display: flex;
+    min-width: 180px;
+    flex: 1 1 calc(10% - 10px);
+    max-width: calc(20% 8px);
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    box-shadow: 4px 0 8px rgba(0, 0, 0, .3);
+    padding: 10px;
+    border-radius: 5px;
+    height: 300px;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #12175f;
+}
+
+.button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #12175f;
+    border: 2px solid #12175f;
+    border-radius: 5px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.button:hover {
+    background-color: #12175f;
+    color: white;
+}
+
+.card img {
+    width: 150px;
+    height: auto;
+    object-fit: cover;
+}
+

@@ -1,0 +1,447 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/*RESETEO DE ALGUNOS ESTILOS POR DEFECTO*/
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Poppins'
+}
+
+
+/*?HEADER*/
+.header {
+    background-color: #12175f;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+/*?LOGO DEL HEADER*/
+.header__logo {
+    padding: 0.625rem;
+    color: #fff;
+    font-size: 24px;
+    white-space: nowrap;
+}
+
+
+.header__buscador {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.lupa__header {
+    position: absolute;
+    right: 0;
+    padding: 10px;
+    color: #12175f;
+}
+
+
+
+/*?BUSCADOR HEADER INPUT*/
+.header__buscador input {
+    width: 500px;
+    padding: .375rem;
+    border: none;
+    border-radius: 16px;
+}
+
+
+.header__nav {
+    flex-wrap: nowrap;
+}
+
+.nav__list {
+    display: flex;
+    align-items: center;
+}
+
+
+/*?SELECCIONAMOS LOS <li>*/
+.list__itemh {
+    white-space: nowrap;
+    margin: 10px;
+}
+
+/*?ICONO HEADER CARRITO*/
+/*
+.icono__carrito_header {
+
+}
+*/
+
+/*?SELECCIONAMOS LOS <a>*/
+.item__enlace {
+    font-size: 16px;
+    color: #fff;
+}
+
+/*?MODIFICAMOS SOLAMENTE EL ICONO*/
+.item--modify i {
+    background-color: #2424b5;
+    padding: .625rem;
+    border-radius: 50%;
+    color: #fff;
+}
+
+/* * FIN  HEADER * */
+
+/* ?MENU LATERAL IZQ */
+.menu_lateral__contenedor {
+    position: fixed; 
+    top: 0;
+    left: -400px;
+    width: 400px;
+    height: 100vh; 
+    transition: left 0.3s ease;
+    z-index: 1000;
+    box-shadow: .20px 0 10px rgba(0, 0, 0, .3);
+    background-color: #fff;
+    overflow-y: auto; 
+}
+
+
+.menu_lateral__contenido {
+    display: grid;
+}
+
+.menulateral__header {
+    background-color: #12175f;
+    height: 5.5rem;
+    color: #fff;
+    justify-content: space-evenly;
+    align-items: center;
+    display: flex;
+}
+
+
+/*
+.menulateral__header_usuario {
+    
+}
+*/
+
+.menuheader__item_usuario {
+    margin-right: 6.25rem;
+}
+
+.menuheader__item_usuario i {
+    background-color: #fff;
+    color: #12175f;
+    padding: 1rem;
+    border-radius: 50%;
+}
+
+
+
+
+
+/*?TEXTO MENU LATERAL*/
+
+/*
+    .menuheader__item_texto {
+        position: relative;
+}
+*/
+
+
+
+/*?BUSCADOR MENU LATERAL*/
+
+.menulateral__buscador {
+    display: none;
+}
+
+.menulateral__nav {
+    margin: auto;
+    margin-top: 3.125rem;
+    font-size: 22px;
+}
+
+.listalateral__item {
+    font-family: 600;
+}
+
+.submenu__subtitulo {
+    color: #12175f;
+    text-decoration: underline;
+}
+
+
+.listalateral__link {
+    color: #12175f;
+}
+
+.menu_lateral__contenedor.show {
+    left: 0;
+}
+
+
+.menuheader__item_equis {
+    padding-left: 20px;
+}
+
+.menuheader__item_equis i {
+    cursor: pointer;
+    font-size: 20px;
+    transition: all .3s;
+}
+
+.submenu {
+    margin-bottom: 2.5rem;
+}
+
+.submenu-1 {
+    margin-bottom: 40px;
+}
+
+.submenu-2 {
+    margin-bottom: 40px;
+}
+
+/* ? CLASE PARA BLOQUEAR EL SCROLL */
+.no-scroll {
+    overflow: hidden;
+}
+
+
+/*?OVERLAY MENU LATERAL */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    display: none; 
+    z-index: 999; 
+}
+
+.menu_lateral__contenedor.show ~ .overlay {
+    display: block;
+}
+
+
+/*!FIN MENU LATERAL IZQ*/
+
+
+.contenedor__cuenta {
+    position: absolute;
+    width: 350px;
+    height: 270px;
+    right: 20px;
+    top: 100px;
+    align-items: center;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 4px 0 8px rgba(0, 0,0, .3);
+    border-radius: 5px;
+    background-color: #fff;
+    display: none;
+    z-index: 1000;
+}
+
+.contenedor__cuenta button {
+    width: 200px;
+    padding: 6px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+    font-weight: 600;
+    color: #12175f;
+    cursor: pointer;
+}
+
+.cuenta__continuar {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 20px 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: #12175f;
+}
+
+.cuenta__continuar::before,.cuenta__continuar::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #ccc;
+    margin: 0 10px;
+}
+
+/*ESTILOS A LOS BOTTONES POR SEPERADO*/
+
+    .btn--iniciosesion {
+        background-color: transparent;
+        border: 2px solid #12175f !important;
+        margin-top: 10px;
+        color: #12175f;
+    }
+
+    .btn--facebook, .btn--registro{
+        background-color: #12175f;
+        color: #fff !important;
+        margin: 0;
+    }
+
+    .btn--facebook i{
+        margin: 0;
+        font-size: 16px;
+        margin-right: 8px;
+    }
+
+    .btn--modify-google {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .btn__empresa span {
+        margin-right: 20px;
+    }
+
+    .btn__empresa img {
+        margin-right: 10px;
+    }
+
+/* ?FIN MENU CUENTA */
+
+/*!IMAGEN HERO*/
+
+
+.container__hero img{
+    width: 100vw;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    max-width: 1200px; /* Puedes ajustar el ancho según sea necesario */
+    margin: auto;
+    overflow: hidden;
+}
+
+.carrusel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carrusel__imagenes {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carrusel__imagenes img {
+    width: 100%;
+    height: auto;
+    flex-shrink: 0;
+}
+
+.carrusel__prev,
+.carrusel__next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10; /* Asegúrate de que los botones estén encima de las imágenes */
+}
+
+.carrusel__prev {
+    left: 10px;
+}
+
+.carrusel__next {
+    right: 10px;
+}
+
+/*!FIN IMAGEN HERO*/
+
+.tarjeta__titulo {
+    width: 100vw;
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+    color: #666565;
+    font-weight: 300;
+}
+
+.tarjeta__contenedor {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 100%;
+    padding: 40px;
+    gap: 20px;
+
+}
+
+.tarjeta__contenido {
+    display: block;
+    min-width: 180px;
+    flex: 1 1 calc(10% - 10px);
+    max-width: calc(20% 8px);
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    box-shadow: 4px 0 8px rgba(0, 0, 0, .3);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+.contenidotarjeta__imagen img{
+    width: 100%;
+}
+
+
+.contenidotarjeta__descripcion {
+    padding: 10px;
+}
+
+.contenidotarjeta__precio {
+    padding: 10px;
+}
+
+.precio__desde {
+    font-size: 12px;
+    display: block;
+    text-decoration: line-through;
+    color: #808080;
+}
+
+/*TODOS LOS HOVERS*/
+.tarjeta__contenido:hover {
+    box-shadow: 4px 0 8px rgba(0, 0, 0 , .6);
+}
+
+.listalateral__link:hover {
+    color: #1111E6;
+}
+
+.salir i:hover {
+    font-size: 1.5rem; 
+}
+
+.enlace__atras {
+    color: #fff;
+}
+
+
+

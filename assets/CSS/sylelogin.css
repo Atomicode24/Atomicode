@@ -36,6 +36,7 @@
     transition: ease .2s;
     border: 2px solid #12175f;
     margin: 10px;
+<<<<<<< HEAD
     width: 100%;
 }
 
@@ -47,6 +48,8 @@
     border: 2px solid #12175f;
     margin: 10px;
     width: 100%;
+=======
+>>>>>>> 5c73d8289789d4a6aa06a984c81d5cb38eaf8778
 }
 
 .contenedor__boton{
@@ -68,6 +71,7 @@
 
 }
 
+<<<<<<< HEAD
 .contenedor__boton button{
     margin: 5px;
     padding: 10px;
@@ -81,6 +85,8 @@
 
 }
 
+=======
+>>>>>>> 5c73d8289789d4a6aa06a984c81d5cb38eaf8778
 .contenedor__boton a:last-child {
     border: 2px solid #12175f;
     background-color: transparent;
@@ -89,6 +95,7 @@
     text-align: center;
 }
 
+<<<<<<< HEAD
 .contenedor__boton button:last-child {
     border: 2px solid #12175f;
     background-color: transparent;
@@ -96,6 +103,8 @@
     color: #fff;
     text-align: center;
 }
+=======
+>>>>>>> 5c73d8289789d4a6aa06a984c81d5cb38eaf8778
 
 input:focus{
     outline: none; /* Quitar el borde por defecto */
