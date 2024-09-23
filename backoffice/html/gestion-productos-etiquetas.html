@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Categorías y Etiquetas</title>
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/gestion-productos-etiquetas.css">
+</head>
+<body>
+    <div class="menu">
+        <h1 class="menu-title">FastBuy</h1>
+        <ul>
+            <li><a href="../../HTML/index.html">Inicio</a></li>
+            <li><a href="gestion-productos.html">Gestión de Productos</a></li>
+            <li><a href="gestion-productos-etiquetas.html">Gestión de Categorías y Etiquetas</a></li>
+            <li><a href="gestion-pedidos.html">Gestión de Pedidos</a></li>
+            <li><a href="informe-analisis.html">Informes y Análisis</a></li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <section id="gestion-categorias-etiquetas">
+            <h1>Gestión de Categorías y Etiquetas</h1>
+            
+            <form id="seleccion-categoria">
+                <h2>Seleccionar Categoría</h2>
+                <label for="categoria-select">Categoría:</label>
+                <select id="categoria-select" name="categoria-select">
+                    <option value="">Seleccione una categoría</option>
+                    <option value="electronica">Electrónica</option>
+                    <option value="ropa">Ropa</option>
+                    <option value="hogar">Hogar</option>
+                    <option value="deportes">Deportes</option>
+                    <option value="juguetes">Juguetes</option>
+                    <option value="salud">Salud</option>
+                    <option value="automovil">Automóvil</option>
+                    <option value="oficina">Oficina</option>
+                    <option value="jardineria">Jardinería</option>
+                    <option value="libros">Libros</option>
+                </select>
+                
+                <label for="descripcion-categoria">Descripción:</label>
+                <textarea id="descripcion-categoria" name="descripcion-categoria" rows="5" readonly></textarea>
+            </form>
+        </section>
+    </div>
+
+    <script src="../js/gestion-categorias-etiquetas.js"></script>
+</body>
+</html>

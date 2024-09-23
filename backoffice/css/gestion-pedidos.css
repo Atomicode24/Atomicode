@@ -1,0 +1,110 @@
+#gestion-pedidos {
+    padding: 20px;
+}
+
+h2 {
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+span.pendiente {
+    color: orange;
+}
+
+span.en-proceso {
+    color: blue;
+}
+
+span.enviado {
+    color: green;
+}
+
+span.entregado {
+    color: darkgreen;
+}
+
+span.cancelado {
+    color: red;
+}
+
+.menu {
+    width: 215px;
+    background-color: #12175f; /* Color de fondo del menú */
+    padding: 20px;
+    min-height: 100vh; /* Se asegura de que el menú cubra toda la altura de la ventana */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    position: fixed; /* Fija el menú en la página */
+    top: 0;
+    left: 0;
+    z-index: 2; /* Asegura que el menú esté sobre el contenido */
+}
+
+.menu-title {
+    color: #f4f4f4; /* Color del título del menú */
+    font-size: 1.8em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50; /* Azul oscuro, elegante y profesional */
+    font-size: 2.5em; /* Tamaño de fuente adecuado */
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Sombra suave para contraste */
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu li {
+    margin: 10px 0;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #e0e0e0; /* Color del texto de los enlaces */
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #1a2a8f; /* Color de fondo de los enlaces */
+}
+
+.menu a:hover {
+    background-color: #1a1a7f; /* Color de fondo al pasar el cursor */
+}
+
+.main-content {
+    margin-left: 235px; /* Ajuste para el nuevo ancho del menú */
+    padding: 40px;
+    position: relative; /* Para posicionar la capa de imagen de fondo */
+    z-index: 1; /* Asegura que el contenido esté sobre la imagen de fondo */
+    min-height: 100vh; /* Asegura que el contenido tenga al menos la altura de la ventana */
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50; /* Azul oscuro, elegante y profesional */
+    font-size: 2.5em; /* Tamaño de fuente adecuado */
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Sombra suave para contraste */
+}

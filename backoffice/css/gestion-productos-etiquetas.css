@@ -1,0 +1,257 @@
+/* Estilos básicos para el menú y la página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.menu {
+    width: 215px;
+    background-color: #12175f; /* Color de fondo del menú */
+    padding: 20px;
+    min-height: 100vh; /* Se asegura de que el menú cubra toda la altura de la ventana */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    position: fixed; /* Fija el menú en la página */
+    top: 0;
+    left: 0;
+    z-index: 2; /* Asegura que el menú esté sobre el contenido */
+}
+
+.menu-title {
+    color: #f4f4f4; /* Color del título del menú */
+    font-size: 1.8em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu li {
+    margin: 10px 0;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #e0e0e0; /* Color del texto de los enlaces */
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #1a2a8f; /* Color de fondo de los enlaces */
+}
+
+.menu a:hover {
+    background-color: #1a1a7f; /* Color de fondo al pasar el cursor */
+}
+
+.container {
+    margin-left: 235px; /* Ajuste para el nuevo ancho del menú */
+    padding: 40px;
+    position: relative; /* Para posicionar la capa de imagen de fondo */
+    z-index: 1; /* Asegura que el contenido esté sobre la imagen de fondo */
+    min-height: 100vh; /* Asegura que el contenido tenga al menos la altura de la ventana */
+}
+
+/* Imagen de fondo opacada */
+.container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('ruta/a/tu/imagen.jpg') no-repeat center center;
+    background-size: cover;
+    opacity: 0.5; /* Ajusta la opacidad aquí (0.0 a 1.0) */
+    z-index: -1; /* Asegura que la imagen esté detrás del contenido */
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50; /* Azul oscuro, elegante y profesional */
+    font-size: 2.5em; /* Tamaño de fuente adecuado */
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Sombra suave para contraste */
+}
+
+form {
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semi-transparente para el formulario */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input[type="text"], input[type="number"], textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+}
+
+input[type="file"] {
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+}
+
+input[type="file"]::file-selector-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="file"]::file-selector-button:hover {
+    background-color: #45a049;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+}
+
+button[type="button"]#vaciar {
+    background-color: #f44336;
+    color: white;
+}
+
+button.eliminar {
+    background-color: #f44336;
+    color: white;
+}
+
+button.editar {
+    background-color: #4CAF50;
+    color: white;
+}
+
+button.eliminar:hover {
+    background-color: #d32f2f; /* Rojo oscuro */
+    transform: scale(1.05); /* Animación de escalado */
+}
+
+button.editar:hover {
+    background-color: #388e3c; /* Verde oscuro */
+    transform: scale(1.05); /* Animación de escalado */
+}
+
+.table-img {
+    width: 100px;
+    height: auto;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+/* Estilos para los modales */
+.modal {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4); /* Fondo oscuro */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Estilos adicionales para la tabla de selección */
+#tabla-productos-seleccionar {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#tabla-productos-seleccionar, th, td {
+    border: 1px solid #ddd;
+}
+
+#tabla-productos-seleccionar th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+#tabla-productos-seleccionar th {
+    background-color: #f2f2f2;
+}
+
+/* Responsividad para pantallas más pequeñas */
+@media screen and (max-width: 768px) {
+    .menu {
+        width: 30%;
+    }
+    .container {
+        margin-left: 32%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .menu {
+        width: 40%;
+    }
+    .container {
+        margin-left: 42%;
+    }
+}

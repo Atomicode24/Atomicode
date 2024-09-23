@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subir Producto</title>
+    <link rel="stylesheet" href="../css/gestion-productos.css">
+</head>
+<body>
+    <div class="menu">
+        <h1 class="menu-title">FastBuy</h1>
+        <ul>
+            <li><a href="Index.html">Inicio</a></li>
+            <li><a href="gestion-productos.html">Gestión de Productos</a></li>
+            <li><a href="gestion-productos-etiquetas.html">Gestión de Categorías y Etiquetas</a></li>
+            <li><a href="gestion-pedidos.html">Gestión de Pedidos</a></li>
+            <li><a href="informe-analisis.html">Informes y Análisis</a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <h1>Gestión de Productos</h1>
+        <form id="subir-producto">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="descripcion">Descripción:</label>
+            <textarea id="descripcion" name="descripcion" required></textarea>
+
+            <label for="precio">Precio:</label>
+            <input type="number" id="precio" name="precio" step="0.01" required>
+
+            <label for="imagenes">Imágenes:</label>
+            <input type="file" id="imagenes" name="imagenes" multiple>
+
+            <label for="categorias">Categorías:</label>
+            <input type="text" id="categorias" name="categorias" required>
+
+            <label for="etiquetas">Etiquetas:</label>
+            <input type="text" id="etiquetas" name="etiquetas" required>
+
+            <label for="sku">SKU:</label>
+            <input type="text" id="sku" name="sku" required>
+
+            <button type="submit">Agregar Producto</button>
+        </form>
+
+        <h2>Productos Subidos</h2>
+        <table id="tabla-productos">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Descripción</th>
+                    <th>Precio</th>
+                    <th>Imágenes</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Los productos se agregarán aquí -->
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Modal para seleccionar producto a editar -->
+    <div id="modal-seleccionar-producto" class="modal">
+        <div class="modal-content">
+            <span class="close" id="close-seleccionar">&times;</span>
+            <h2>Seleccionar Producto para Editar</h2>
+            <table id="tabla-productos-seleccionar">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Los productos se agregarán aquí -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Modal para editar producto -->
+    <div id="modal-editar-producto" class="modal">
+        <div class="modal-content">
+            <span class="close" id="close-editar">&times;</span>
+            <h2>Editar Producto</h2>
+            <form id="form-editar-producto">
+                <input type="hidden" id="editar-id">
+                <label for="editar-nombre">Nombre:</label>
+                <input type="text" id="editar-nombre" name="nombre" required>
+
+                <label for="editar-descripcion">Descripción:</label>
+                <textarea id="editar-descripcion" name="descripcion" required></textarea>
+
+                <label for="editar-precio">Precio:</label>
+                <input type="number" id="editar-precio" name="precio" step="0.01" required>
+
+                <label for="editar-imagenes">Imágenes:</label>
+                <input type="file" id="editar-imagenes" name="imagenes" multiple>
+
+                <label for="editar-categorias">Categorías:</label>
+                <input type="text" id="editar-categorias" name="categorias" required>
+
+                <label for="editar-etiquetas">Etiquetas:</label>
+                <input type="text" id="editar-etiquetas" name="etiquetas" required>
+
+                <label for="editar-sku">SKU:</label>
+                <input type="text" id="editar-sku" name="sku" required>
+
+                <button type="submit">Guardar Cambios</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="../js/gestionar-productos.js"></script>
+</body>
+</html>

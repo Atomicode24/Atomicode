@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Pedidos</title>
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/gestion-pedidos.css">
+</head>
+<body>
+    <div class="menu">
+        <h1 class="menu-title">FastBuy</h1>
+        <ul>
+            <li><a href="Index.html">Inicio</a></li>
+            <li><a href="gestion-productos.html">Gestión de Productos</a></li>
+            <li><a href="gestion-productos-etiquetas.html">Gestión de Categorías y Etiquetas</a></li>
+            <li><a href="gestion-pedidos.html">Gestión de Pedidos</a></li>
+            <li><a href="informe-analisis.html">Informes y Análisis</a></li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <section id="gestion-pedidos">
+            <h1>Gestión de Pedidos</h1>
+            
+            <h3>Estados del Pedido</h3>
+            <form id="estado-pedido">
+                <label for="estado">Estado del Pedido:</label>
+                <select id="estado" name="estado">
+                    <option value="pendiente">Pendiente</option>
+                    <option value="en-proceso">En Proceso</option>
+                    <option value="enviado">Enviado</option>
+                    <option value="entregado">Entregado</option>
+                    <option value="cancelado">Cancelado</option>
+                </select>
+                <button type="submit">Actualizar Estado</button>
+            </form>
+            
+            <h3>Historial de Pedidos</h3>
+            <table id="tabla-pedidos">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Cliente</th>
+                        <th>Estado</th>
+                        <th>Fecha</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Pedidos se mostrarán aquí -->
+                </tbody>
+            </table>
+        </section>
+    </div>
+
+    <script src="../js/gestion-pedidos.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Categorías y Etiquetas</title>
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/gestion-productos-etiquetas.css">
+</head>
+<body>
+    <div class="sidebar">
+        <a href="Index.html">Volver al Menú</a>
+    </div>
+
+    <div class="main-content">
+        <section id="gestion-categorias-etiquetas">
+            <h1>Gestión de Categorías y Etiquetas</h1>
+            
+            <form id="agregar-categoria-etiqueta">
+                <h2>Agregar Categoría/Etiqueta a Producto</h2>
+                <label for="producto-id">ID del Producto:</label>
+                <input type="text" id="producto-id" name="producto-id">
+                
+                <label for="categoria-etiqueta">Categoría/Etiqueta:</label>
+                <input type="text" id="categoria-etiqueta" name="categoria-etiqueta">
+                
+                <button type="submit">Agregar</button>
+            </form>
+            
+            <form id="editar-categoria-etiqueta">
+                <h2>Editar Categoría/Etiqueta</h2>
+                <label for="producto-id-editar">ID del Producto:</label>
+                <input type="text" id="producto-id-editar" name="producto-id-editar">
+                
+                <label for="categoria-etiqueta-editar">Nueva Categoría/Etiqueta:</label>
+                <input type="text" id="categoria-etiqueta-editar" name="categoria-etiqueta-editar">
+                
+                <button type="submit">Editar</button>
+            </form>
+        </section>
+    </div>
+
+    <script src="../js/gestion-categorias-etiquetas.js"></script>
+</body>
+</html>
