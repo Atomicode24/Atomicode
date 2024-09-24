@@ -390,7 +390,7 @@
 .cuentas__identificacion {
     width: 100%;
     text-align: center;
-    margin-bottom: 1em;
+    margin-bottom: 3em;
 }
 
 .identificacion__boton-iniciosesion {
@@ -403,6 +403,7 @@
     color: #fff;
     font-weight: 600;
     font-size: .9em;
+    margin-bottom: 1em;
 }
 
 .identificacion__boton-registrate {
@@ -412,7 +413,7 @@
     border: none;
     font-family: Poppins;
     background-color: #222831;
-    color: #fff;
+    color: #fff !important;
     font-weight: 600;
     font-size: .9em;
 }

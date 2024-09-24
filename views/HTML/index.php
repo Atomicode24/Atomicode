@@ -15,7 +15,7 @@
         <!-- HEADER LOGO -->
         <section class="header__logo">
             <h3 class="logo__texto">
-                <i class="fa-sharp fa-solid fa-cart-shopping"></i> Fast <span class="texto__bold">Buy</span>
+                <i class="fa-sharp fa-solid fa-cart-shopping"></i>Fast <span class="texto__bold">Buy</span>
             </h3>
         </section>
     
@@ -60,7 +60,7 @@
                         <i class="fa-solid fa-cart-shopping enlace__iconocarrito"></i>
                         <div class="text-container">
                             <span id="cart-count">0</span>
-                            <span class="span__texto_cesta">cesta</span>
+                            <span class="span__texto_cesta">Carrito</span>
                         </div>
                     </a>
                 </li>
