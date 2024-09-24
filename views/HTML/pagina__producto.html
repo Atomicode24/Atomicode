@@ -5,111 +5,124 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/610fbd17c7.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../../assets/CSS/styleproducto.css">
-    <link rel="stylesheet" href="../../assets/CSS/style.css">
+    <link rel="stylesheet" href="../../assets/CSS/styleindex.css">
     <script src="../JS/ocultarelemento.js" defer></script>
     <title>Termo Stanley</title>
 </head>
 <body>
-
-    <header class="header">
-        <!--?CONTENEDOR LOGO-->
-        <div class="header__logo">
-            <a href="index.html" class="enlace__atras"><span class="logo__texto"><i class="fa-sharp fa-solid fa-cart-shopping"></i> Fast <b>Buy</b></span></a>
-        </div>
-
-        <!--?CONTENEDOR INPUT BUSCADOR -->
-        <div class="header__buscador">
-            <input  type="text" placeholder="Buscar Producto..." ><i class="fa-solid fa-magnifying-glass lupa__header"></i>
-        </div>
-
-        <!--?CONTENEDOR LDocument checking completed. No errors or warnings to show.ISTA-->
-        <nav class="header__nav">
-            <ul class="nav__list">
-                <li class="list__itemh"><a class="item__enlace" href="#">Inicio</a></li>
-                <li class="list__itemh"><a class="item__enlace" href="../../views/HTML/carrito.html">Carrito  <span id="cart-count">0</span></a></li>
-                <li class="list__itemh abrir__cuenta"><a class="item__enlace" href="#"><span><i class="fa-solid fa-user"></i></span> Mi Cuenta</a></li>
-                <li class="list__itemh item--modify"><a class="item__enlace" href="#"><i class="fa-solid fa-bars abrir"></i></a></li>
-            </ul>
-        </nav>
-    </header>
-    <!--todoFIN HEADER-->
-
-    <!--?CONTENEDOR MENU LATERAL-->
-    <div class="menu_lateral__contenedor">
-        <div class="menu_lateral__contenido">
-            <!--?HEADER MENU LATERAL-->
-            <div class="menulateral__header">
-                <div class="menulateral__header_usuario">
-                    <span class="menuheader__item_usuario"><i class="fa-solid fa-user"></i></span>
-                    <span class="menuheader__item_texto"> Hola, Ignacio Rocha</span>
-                    <span class="menuheader__item_equis  salir "><i class="fa-solid fa-x"></i></span>
-                </div>
-            </div>
-
-            <!--?BUSCADOR MENU LATERAL-->
-            <div class="menulateral__buscador">
-                <input type="text" placeholder="Buscar Producto...">
-            </div>
-
-            <nav class="menulateral__nav">
-                <section class="submenu">
-                    <h2 class="submenu__subtitulo">Por Departamento</h2>
-                    <ul class="nav__list_lateral">
-                        <li class="listlateral__item"><a class="listalateral__link" href="#"><i class="fa-solid fa-tv"></i> Electronico</a></li>
-                        <li class="listlateral__item"><a class="listalateral__link" href="#">Computadoras</a></li>
-                        <li class="listlateral__item"><a class="listalateral__link" href="#">Hogar</a></li>
-                        <li class="listlateral__item"><a class="listalateral__link" href="#">Ver Todo</a></li>
-                    </ul>
-                </section>
-                <section class="submenu-1">
-                    <h2 class="submenu__subtitulo">Ropa y Accesorios</h2>
-                    <ul class="nav__list_lateral">
-                        <li class="listalateral__item"><a class="listalateral__link" href="#">Hombre</a></li>
-                        <li class="listalateral__item"><a class="listalateral__link" href="#">Mujer</a></li>
-                        <li class="listalateral__item"><a class="listalateral__link" href="#">Niño</a></li>
-                        <li class="listalateral__item"><a class="listalateral__link" href="#">Animales</a></li>
-                    </ul>
-                </section>
-                <section class="submenu">
-                    <h2 class="submenu__subtitulo">Ayuda & Ajustes</h2>
-                    <ul class="nav__list_lateral">
-                        <li class="listalateral__item"><a class="listalateral__link" href="#">Tu Cuenta</a></li>
-                        <li class="listalateral__item"><a class="listalateral__link" href="#"><i class="fa-solid fa-language"></i> Español</a></li>
-                        <li class="listalateral__item"><a class="listalateral__link" href="#"><i class="fa-solid fa-earth-americas"></i> Urguay</a></li>
-                        <li class="listalateral__item"><a class="listalateral__link" href="#" class="abrir__cuenta2"> <span><i class="fa-solid fa-user"></i></span> Mi Cuenta</a></li>
-                    </ul>
-                </section>
+        <!-- HEADER -->
+        <header class="header">
+            <!-- HEADER LOGO -->
+            <section class="header__logo">
+                <h3 class="logo__texto"><i class="fa-sharp fa-solid fa-cart-shopping"></i>FastBuy</h3>
+            </section>
+        
+            <!-- HEADER INPUT BUSCADOR -->
+            <section class="header__buscador">
+                <input class="buscador__input" type="text" placeholder="Buscar Producto..." aria-label="Buscar productos">
+                <button class="buscador__boton" aria-label="Buscar"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </section>
+        
+            <!-- HEADER NAV MENU -->
+            <nav class="header__nav" aria-label="Menú de usuario">
+                <ul class="nav__list">
+                    <li class="list__itemhead itemhead--cuenta">
+                        <a href="#" class="item__enlace enlace--modify">
+                            <i class="fa-regular fa-user enlace__iconouser"></i>
+                            <div class="text-container">
+                                <span class="span__texto_bienvenido">¡Bienvenido!</span>
+                                <span class="span__texto_cuenta">Iniciar sesion / Registrarse<i class='bx bx-chevron-down'></i></span>
+                            </div>
+                        </a>
+    
+                        <div class="submenu__cuenta">
+                            <div class="cuentas__identificacion">
+                                <a href="login_login.php"><button class="identificacion__boton-iniciosesion">Iniciar Sesion</button></a>
+                                <a href="register_login.php"><button class="identificacion__boton-registrate">Registrate</button></a>
+                            </div>
+                            <div class="contenedor__opciones">
+                                <ul class="opciones__usuario">
+                                    <li class="item--separador"></li>
+                                    <li class="opciones__item"><a class="opciones__enlace" href="#"><i class="fa-regular fa-clipboard"></i> Mis Pedidos</a></li>
+                                    <li class="opciones__item"><a class="opciones__enlace" href="#"><i class="fa-regular fa-credit-card"></i> Pago</a></li>
+                                    <li class="opciones__item"><a class="opciones__enlace" href="#"><i class="fa-regular fa-heart"></i> Lista de deseos</a></li>
+                                    <li class="opciones__item"><a class="opciones__enlace" href="#"><i class="fa-solid fa-ticket"></i> Mis Cupones</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+    
+                    <li class="list__itemhead">
+                        <a href="#" class="item__enlace">
+                            <i class="fa-solid fa-cart-shopping enlace__iconocarrito"></i>
+                            <div class="text-container">
+                                <span id="cart-count">0</span>
+                                <span class="span__texto_cesta">Carrito</span>
+                            </div>
+                        </a>
+                    </li>
+                    
+                </ul>
             </nav>
-        </div>
-    </div>
+        </header>
 
-    <!--?CONTENEDOR CUENTA-->
-    <section class="contenedor__cuenta">
-        <div class="contenedorcuenta__contenido">
-            <div class="cuenta__formulario">
-                <div class="cuenta__inciosesion">
-                    <a href="login.html"><button class="btn__cuenta btn--iniciosesion">Iniciar Sesión</button>
-                    </a>
-                </div>
-                <div class="cuenta__registro">
-                    <a href="register.html"><button class="btn__cuenta btn--registro">Registrarse</button></a>
-                </div>
-            </div>
-            <div class="cuenta__continuar">
-                <span>Continuar</span>
-            </div>
-            <div class="cuenta__sociales">
-                <div class="container__btnsociales">
-                    <button class="btn__empresa btn--modify-google"><img src="../IMG/google(1).png" alt=""><span>Con Google</span></button>
-                </div>
-                <div class="container__btnsociales btnsociales--modify">
-                    <button class="btn__empresa btn--facebook"><i class="fa-brands fa-square-facebook"></i>Con Facebook</button>
-                </div>
-            </div>
-        </div>
-    </section>
+        
+          <!-- CONTENEDOR MENU LATERAL -->
+          <section class="menu__lateral_contenedor">
+            <div class="menu__lateral_contenido">
+                <!-- MENU LATERAL HEADER -->
+                 <div class="menulateral__header">
+                    <!-- HEADER MENU LATERAL IZQ -->
+                    <div class="menulateral__header_usuario">
+                        <span class="menuheader__item_usuario"><i class="fa-solid fa-user"></i>  Hola, Ignacio Rocha</span>
+                    <span class="menuheader__item_equis"><i class="fa-solid fa-x  salir"></i></span>
+                    </div>
+                 </div>
 
-
+                 <!-- NAV MENU LATERAL IZQ -->
+                  <section class="menulateral__nav">
+                    <nav class="submenu">
+                        <h2 class="submenu__subtitulo">Por departamento</h2>
+                        <ul class="nav__list_menulateral">
+                            <li class="listalateral__item"><a class="itemlateral__enlace enlace--modificado" href="#"><div class="item__nombre">Computadoras</div><i class='bx bx-chevron-right'></i></a></li>
+                            <li class="listalateral__item"><a class="itemlateral__enlace enlace--modificado" href="#"><div class="item__nombre">Electronico</div><i class='bx bx-chevron-right'></i></a></li>
+                            <li class="listalateral__item"><a class="itemlateral__enlace enlace--modificado" href="#"><div class="item__nombre">Hogar</div><i class='bx bx-chevron-right'></i></a></li>
+                            <li class="listalateral__item"><a class="itemlateral__enlace enlace--modificado" href="#"><div class="item__nombre">Ver Todo</div><i class='bx bx-chevron-right'></i></a></li>
+                            <li class="item--separador"></li>
+                        </ul>
+                    </nav>
+                    <nav class="submenu-1">
+                        <h2 class="submenu__subtitulo">Ropa y Accesorios</h2>
+                        <ul class="nav__list_menulateral">
+                            <li class="listalateral__item"><a class="itemlateral__enlace enlace--modificado" href="#"><div class="item__nombre">Hombre</div><i class='bx bx-chevron-right'></i></a></li>
+                            <li class="listalateral__item"><a class="itemlateral__enlace enlace--modificado" href="#"><div class="item__nombre">Mujer</div><i class='bx bx-chevron-right'></i></a></li>
+                            <li class="listalateral__item"><a class="itemlateral__enlace enlace--modificado" href="#"><div class="item__nombre">Niño</div><i class='bx bx-chevron-right'></i></a></li>
+                            <li class="listalateral__item"><a class="itemlateral__enlace enlace--modificado" href="#"><div class="item__nombre">Mascota</div><i class='bx bx-chevron-right'></i></a></li>
+                            <li class="item--separador"></li>
+                        </ul>
+                    </nav>
+                    <nav class="submenu">
+                        <h2 class="submenu__subtitulo">Ayuda & Ajustes</h2>
+                        <ul class="nav__list_menulateral">
+                            <li class="listalateral__item"><a class="itemlateral__enlace" href="#">Tu Cuenta</a></li>
+                            <li class="listalateral__item"><a class="itemlateral__enlace" href="#"><i class="fa-solid fa-language"></i> Español</a></li>
+                            <li class="listalateral__item"><a class="itemlateral__enlace" href="#"><i class="fa-solid fa-earth-americas"></i> Urguay</a></li>
+                            <li class="listalateral__item"><a class="itemlateral__enlace" href="#"><span><i class="fa-solid fa-user"></i></span> Mi Cuenta</a></li>
+                        </ul>
+                    </nav>
+                    <nav class="submenu3">
+                        <h2 class="submenu__subtitulo">Ropa y Accesorios</h2>
+                        <ul class="nav__list_menulateral">
+                            <li class="listalateral__item"><a class="itemlateral__enlace enlace--modificado" href="#"><div class="item__nombre">Hombre</div><i class='bx bx-chevron-right'></i></a></li>
+                            <li class="listalateral__item"><a class="itemlateral__enlace enlace--modificado" href="#"><div class="item__nombre">Mujer</div><i class='bx bx-chevron-right'></i></a></li>
+                            <li class="listalateral__item"><a class="itemlateral__enlace enlace--modificado" href="#"><div class="item__nombre">Niño</div><i class='bx bx-chevron-right'></i></a></li>
+                            <li class="listalateral__item"><a class="itemlateral__enlace enlace--modificado" href="#"><div class="item__nombre">Mascota</div><i class='bx bx-chevron-right'></i></a></li>
+                            <li class="item--separador"></li>
+                        </ul>
+                    </nav>
+                  </section>
+            </div>
+        </section>
 
     <section class="contenedor__producto">
         <!--CONTENEDOR PRODUCTO IMAGEN-->

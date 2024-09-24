@@ -199,21 +199,17 @@
         <!-- TARJETAS OFERTAS -->
         <section class="seccion__productos">
             <div class="tarjeta__producto">
-                <a href="#"><img max-height="130px" src="../../assets/IMG/tvsamsung.webp" alt=""></a>
+                <a href="../../views/HTML/pagina__producto.html"><img max-height="130px" src="../../assets/IMG/tvsamsung.webp" alt=""></a>
                 <div class="linea"></div>
                 <div class="detalles__producto">
-                    <a class="enlace__producto" href="#">
+                    <a class="enlace__producto" href="../../views/HTML/pagina__producto.html">
                         <p class="descripcion__producto">
                             Lorem ipsum, dolor sit amet consectetur adipisicing elit...
                         </p>
                     </a>
                     <div class="calificacion__producto">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
                     </div>
+                    <br><br>
                     <span class="precio__producto producto--antes">U$S 149.99</span>
                     <span class="precio__producto">U$S 119.99</span>
                     <button class="añadir__producto"><i class="fa-solid fa-cart-plus"></i></button>
