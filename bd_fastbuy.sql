@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 16-09-2024 a las 17:09:40
+-- Tiempo de generación: 23-09-2024 a las 19:05:13
 -- Versión del servidor: 10.4.32-MariaDB
 -- Versión de PHP: 8.0.30
 
@@ -163,7 +163,10 @@ CREATE TABLE `usuarios` (
 
 INSERT INTO `usuarios` (`Id_Usuarios`, `Nombre`, `Apellido`, `Telefono`, `eMail`, `Contraseña`, `rol`) VALUES
 (1, 'Pedro', 'Gonzalez', '092649065', 'pedrito.g@gmail,com', 'pedritogonzalez2024', 'user'),
-(2, 'Admnis', 'Admins', '', 'adminsfastbuy@gmail.com', 'Fastbuyadmin8241', 'admin');
+(2, 'Admnis', 'Admins', '', 'adminsfastbuy@gmail.com', 'Fastbuyadmin8241', 'admin'),
+(3, 'Ezequiel', 'Leites', NULL, 'ezealebry@gmail.com', '$2y$10$CqJQ7Z6JEIXvkCLMpgQ/IOy.aAtUQlf9EP6tliCk6fB1muLs36KBW', ''),
+(4, 'AdminEzequiel', 'Admin', NULL, 'ezeadminfast@gmail.com', '$2y$10$7UPXZATIVJmt90B.1VgD.ukuUPwrCV/xsELMbo62SE2HtjgDzG5WW', 'admin'),
+(5, 'Rodrigo', 'Blanco', NULL, 'blancorodrigo452@gmail.com', '$2y$10$rv.u4Vc7fy3GE1nqZA5xFOdryulPnI5aUWig8muvy7SeGasp2tEBO', 'user');
 
 --
 -- Índices para tablas volcadas
@@ -291,7 +294,7 @@ ALTER TABLE `productos`
 -- AUTO_INCREMENT de la tabla `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `Id_Usuarios` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `Id_Usuarios` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- Restricciones para tablas volcadas

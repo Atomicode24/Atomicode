@@ -1,7 +1,12 @@
 <?php
+ini_set('log_errors', 1);
+ini_set('error_log', 'C:/xampp/php/logs/php_error.log');
+error_reporting(E_ALL);
+
 // Iniciar el buffer de salida y la sesión
-ob_start();
 session_start();
+
+trigger_error("Mensaje de error", E_USER_NOTICE); // E_USER_NOTICE, E_USER_WARNING, E_USER_ERROR
 
 include('../config/Database.php');
 
@@ -10,8 +15,8 @@ $database = new Database();
 $conn = $database->getConnection();
 
 // Obtener los datos del formulario
-$Contraseña = $_POST['Contraseña'];
 $eMail = $_POST['eMail'];
+$Contraseña = $_POST['Contraseña'];
 
 
 // Inicializar variables

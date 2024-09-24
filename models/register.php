@@ -1,9 +1,13 @@
 <?php
+ini_set('log_errors', 1);
+ini_set('error_log', 'C:/xampp/php/logs/php_error.log');
+error_reporting(E_ALL);
+
 // Iniciar la sesión
 session_start();
 
 // Incluir la clase Database
-include('../config/database.php');
+include('../config/Database.php');
 
 // Crear una instancia de la clase Database y obtener la conexión
 $database = new Database();
@@ -13,7 +17,7 @@ $conn = $database->getConnection();
 $Nombre = $_POST['nombre'];
 $Apellido = $_POST['apellido'];
 $eMail = $_POST['eMail'];
-$Contraseña = $_POST['contraseña'];
+$Contraseña = $_POST['Contraseña'];
 
 // Verificar que los campos no estén vacíos
 if (empty($Nombre) || empty($Apellido) || empty($eMail) || empty($Contraseña)) {

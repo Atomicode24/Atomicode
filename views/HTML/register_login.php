@@ -25,7 +25,7 @@
                     <input type="email" name="eMail" placeholder="ejemplo@ejemplo.com" required>
 
                     <label for="contraseña">Contraseña</label>
-                    <input type="password" name="contraseña" placeholder="Ingrese contraseña" required>
+                    <input type="password" name="Contraseña" placeholder="Ingrese contraseña" required>
                 </div>
                 <div class="contenedor__boton">
                     <button type="submit">Registrar</button>

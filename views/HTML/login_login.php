@@ -14,7 +14,7 @@
 <body>
     <section class="contenedor__login">
         <div class="login">
-            <a href="index.html"> <span class="icono__atras"><i class="fa-solid fa-arrow-left"></i></span></a>
+            <a href="../../views/HTML/index.php"> <span class="icono__atras"><i class="fa-solid fa-arrow-left"></i></span></a>
             <span class="logo__texto"><i class="fa-sharp fa-solid fa-cart-shopping"></i> Fast <b>Buy</b></span>
             <form class="contenedor__input" action="../../models/login.php" method="POST">
                 <input id="correo" type="email" name="eMail" placeholder="ejemplo@ejemplo.com" required>
@@ -25,7 +25,7 @@
                 </div>
 
                 <div class="contenedor__boton">
-                    <button type="submit" id="boton__inicio">Iniciar Sesión</button>
+                    <a id="boton__iniciosesion" href="login_login.php">Inicio Sesion</a>
                     <a id="boton__registro" href="register_login.php">Regístrate</a>
                 </div>
             </form>
