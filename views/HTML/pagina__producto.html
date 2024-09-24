@@ -6,81 +6,82 @@
     <script src="https://kit.fontawesome.com/610fbd17c7.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../../assets/CSS/styleproducto.css">
     <link rel="stylesheet" href="../../assets/CSS/styleindex.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="../JS/ocultarelemento.js" defer></script>
     <title>Termo Stanley</title>
 </head>
 <body>
-        <!-- HEADER -->
-        <header class="header">
-            <!-- HEADER LOGO -->
-            <section class="header__logo">
-                <h3 class="logo__texto"><i class="fa-sharp fa-solid fa-cart-shopping"></i>FastBuy</h3>
-            </section>
+    <!-- HEADER -->
+    <header class="header">
+        <!-- HEADER LOGO -->
+        <section class="header__logo">
+            <h3 class="logo__texto"><i class="fa-sharp fa-solid fa-cart-shopping"></i>FastBuy</h3>
+        </section>
         
-            <!-- HEADER INPUT BUSCADOR -->
-            <section class="header__buscador">
-                <input class="buscador__input" type="text" placeholder="Buscar Producto..." aria-label="Buscar productos">
-                <button class="buscador__boton" aria-label="Buscar"><i class="fa-solid fa-magnifying-glass"></i></button>
-            </section>
+    <!-- HEADER INPUT BUSCADOR -->
+        <section class="header__buscador">
+            <input class="buscador__input" type="text" placeholder="Buscar Producto..." aria-label="Buscar productos">
+            <button class="buscador__boton" aria-label="Buscar"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </section>
         
-            <!-- HEADER NAV MENU -->
-            <nav class="header__nav" aria-label="Menú de usuario">
-                <ul class="nav__list">
-                    <li class="list__itemhead itemhead--cuenta">
-                        <a href="#" class="item__enlace enlace--modify">
-                            <i class="fa-regular fa-user enlace__iconouser"></i>
-                            <div class="text-container">
-                                <span class="span__texto_bienvenido">¡Bienvenido!</span>
-                                <span class="span__texto_cuenta">Iniciar sesion / Registrarse<i class='bx bx-chevron-down'></i></span>
-                            </div>
-                        </a>
-    
-                        <div class="submenu__cuenta">
-                            <div class="cuentas__identificacion">
-                                <a href="login_login.php"><button class="identificacion__boton-iniciosesion">Iniciar Sesion</button></a>
-                                <a href="register_login.php"><button class="identificacion__boton-registrate">Registrate</button></a>
-                            </div>
-                            <div class="contenedor__opciones">
-                                <ul class="opciones__usuario">
-                                    <li class="item--separador"></li>
-                                    <li class="opciones__item"><a class="opciones__enlace" href="#"><i class="fa-regular fa-clipboard"></i> Mis Pedidos</a></li>
-                                    <li class="opciones__item"><a class="opciones__enlace" href="#"><i class="fa-regular fa-credit-card"></i> Pago</a></li>
-                                    <li class="opciones__item"><a class="opciones__enlace" href="#"><i class="fa-regular fa-heart"></i> Lista de deseos</a></li>
-                                    <li class="opciones__item"><a class="opciones__enlace" href="#"><i class="fa-solid fa-ticket"></i> Mis Cupones</a></li>
-                                </ul>
-                            </div>
+    <!-- HEADER NAV MENU -->
+        <nav class="header__nav" aria-label="Menú de usuario">
+            <ul class="nav__list">
+                <li class="list__itemhead itemhead--cuenta">
+                    <a href="#" class="item__enlace enlace--modify">
+                        <i class="fa-regular fa-user enlace__iconouser"></i>
+                        <div class="text-container">
+                            <span class="span__texto_bienvenido">¡Bienvenido!</span>
+                            <span class="span__texto_cuenta">Iniciar sesion / Registrarse<i class='bx bx-chevron-down'></i></span>
                         </div>
-                    </li>
+                    </a>
     
-                    <li class="list__itemhead">
-                        <a href="#" class="item__enlace">
-                            <i class="fa-solid fa-cart-shopping enlace__iconocarrito"></i>
-                            <div class="text-container">
-                                <span id="cart-count">0</span>
-                                <span class="span__texto_cesta">Carrito</span>
-                            </div>
-                        </a>
-                    </li>
+                    <div class="submenu__cuenta">
+                        <div class="cuentas__identificacion">
+                            <a href="login_login.php"><button class="identificacion__boton-iniciosesion">Iniciar Sesion</button></a>
+                            <a href="register_login.php"><button class="identificacion__boton-registrate">Registrate</button></a>
+                        </div>
+                        <div class="contenedor__opciones">
+                            <ul class="opciones__usuario">
+                                <li class="item--separador"></li>
+                                <li class="opciones__item"><a class="opciones__enlace" href="#"><i class="fa-regular fa-clipboard"></i> Mis Pedidos</a></li>
+                                <li class="opciones__item"><a class="opciones__enlace" href="#"><i class="fa-regular fa-credit-card"></i> Pago</a></li>
+                                <li class="opciones__item"><a class="opciones__enlace" href="#"><i class="fa-regular fa-heart"></i> Lista de deseos</a></li>
+                                <li class="opciones__item"><a class="opciones__enlace" href="#"><i class="fa-solid fa-ticket"></i> Mis Cupones</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+    
+                <li class="list__itemhead">
+                    <a href="#" class="item__enlace">
+                        <i class="fa-solid fa-cart-shopping enlace__iconocarrito"></i>
+                        <div class="text-container">
+                            <span id="cart-count">0</span>
+                            <span class="span__texto_cesta">Carrito</span>
+                        </div>
+                    </a>
+                </li>
                     
-                </ul>
-            </nav>
-        </header>
+            </ul>
+        </nav>
+    </header>
 
         
-          <!-- CONTENEDOR MENU LATERAL -->
-          <section class="menu__lateral_contenedor">
+    <!-- CONTENEDOR MENU LATERAL -->
+        <section class="menu__lateral_contenedor">
             <div class="menu__lateral_contenido">
                 <!-- MENU LATERAL HEADER -->
-                 <div class="menulateral__header">
+                <div class="menulateral__header">
                     <!-- HEADER MENU LATERAL IZQ -->
                     <div class="menulateral__header_usuario">
                         <span class="menuheader__item_usuario"><i class="fa-solid fa-user"></i>  Hola, Ignacio Rocha</span>
                     <span class="menuheader__item_equis"><i class="fa-solid fa-x  salir"></i></span>
                     </div>
-                 </div>
+                </div>
 
-                 <!-- NAV MENU LATERAL IZQ -->
-                  <section class="menulateral__nav">
+                <!-- NAV MENU LATERAL IZQ -->
+                    <section class="menulateral__nav">
                     <nav class="submenu">
                         <h2 class="submenu__subtitulo">Por departamento</h2>
                         <ul class="nav__list_menulateral">
@@ -120,7 +121,7 @@
                             <li class="item--separador"></li>
                         </ul>
                     </nav>
-                  </section>
+                </section>
             </div>
         </section>
 
@@ -238,6 +239,7 @@ document.getElementById('refreshButton').addEventListener('click', function() {
     <script src="../../controllers/JS/main.js" defer></script>
     <script src="../../controllers/JS/product.js" defer></script>
     <script src="../../controllers/JS/cart.js" defer></script>
+    <script src="../../controllers/JS/menucuenta.js"></script>
 
 </body>
 </html>
