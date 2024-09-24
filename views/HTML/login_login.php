@@ -25,7 +25,7 @@
                 </div>
 
                 <div class="contenedor__boton">
-                    <a id="boton__iniciosesion" href="login_login.php">Inicio Sesion</a>
+                    <button type="submit" id="boton__iniciosesion">Inicio Sesion</button> <!-- Cambiado a botón de envío -->
                     <a id="boton__registro" href="register_login.php">Regístrate</a>
                 </div>
             </form>
@@ -37,11 +37,8 @@
         const passwordField = document.querySelector('#contrasenia');
 
         togglePassword.addEventListener('click', function () {
-            // Toggle the type attribute between password and text
             const type = passwordField.getAttribute('type') === 'password' ? 'text' : 'password';
             passwordField.setAttribute('type', type);
-
-            // Toggle the icon between eye and eye-slash
             this.classList.toggle('fa-eye-slash');
         });
     </script>
