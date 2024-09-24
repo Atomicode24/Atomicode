@@ -14,9 +14,7 @@
     <header class="header">
         <!-- HEADER LOGO -->
         <section class="header__logo">
-            <h3 class="logo__texto">
-                <i class="fa-sharp fa-solid fa-cart-shopping"></i>Fast <span class="texto__bold">Buy</span>
-            </h3>
+            <h3 class="logo__texto"><i class="fa-sharp fa-solid fa-cart-shopping"></i>FastBuy</h3>
         </section>
     
         <!-- HEADER INPUT BUSCADOR -->
@@ -40,16 +38,15 @@
                     <div class="submenu__cuenta">
                         <div class="cuentas__identificacion">
                             <a href="login_login.php"><button class="identificacion__boton-iniciosesion">Iniciar Sesion</button></a>
-                            <br>
                             <a href="register_login.php"><button class="identificacion__boton-registrate">Registrate</button></a>
                         </div>
                         <div class="contenedor__opciones">
                             <ul class="opciones__usuario">
                                 <li class="item--separador"></li>
-                                <li class="opciones__item"><a class="opciones__enlace" href="#"><i class="fa-regular fa-clipboard"></i>Mis Pedidos</a></li>
-                                <li class="opciones__item"><a class="opciones__enlace" href="#"><i class="fa-regular fa-credit-card"></i>Pago</a></li>
-                                <li class="opciones__item"><a class="opciones__enlace" href="#"><i class="fa-regular fa-heart"></i>Lista de deseos</a></li>
-                                <li class="opciones__item"><a class="opciones__enlace" href="#"><i class="fa-solid fa-ticket"></i>Mis Cupones</a></li>
+                                <li class="opciones__item"><a class="opciones__enlace" href="#"><i class="fa-regular fa-clipboard"></i> Mis Pedidos</a></li>
+                                <li class="opciones__item"><a class="opciones__enlace" href="#"><i class="fa-regular fa-credit-card"></i> Pago</a></li>
+                                <li class="opciones__item"><a class="opciones__enlace" href="#"><i class="fa-regular fa-heart"></i> Lista de deseos</a></li>
+                                <li class="opciones__item"><a class="opciones__enlace" href="#"><i class="fa-solid fa-ticket"></i> Mis Cupones</a></li>
                             </ul>
                         </div>
                     </div>
