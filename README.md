@@ -1,6 +1,6 @@
 # FastBuy
 
-FastBuy es un proyecto desarrollado por AtomCode, una empresa dedicada a la creación de software. Este repositorio contiene el código fuente del sitio web de FastBuy, una plataforma que facilita la compra y venta de productos.
+FastBuy es un proyecto desarrollado por AtomiCode, una empresa dedicada a la creación de software. Este repositorio contiene el código fuente del sitio web de FastBuy, una plataforma que facilita la compra y venta de productos.
 
 ## Características
 
